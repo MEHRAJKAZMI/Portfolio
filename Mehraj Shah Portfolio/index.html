@@ -841,6 +841,71 @@
             <h2 class="h2 article-title">Contact</h2>
           </header>
 
+          <!-- Sidebar contact info added here -->
+          <section class="contact-details">
+            <ul class="contacts-list">
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+                  <a
+                    href="mailto:syedmehrajkazmi11@gmail.com"
+                    class="contact-link"
+                    >syedmehrajkazmi11@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Phone</p>
+                  <a href="tel:+923115323339" class="contact-link"
+                    >+923115323339</a
+                  >
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Birthday</p>
+                  <time datetime="2000-02-17">06 Oct, 1997</time>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Location</p>
+                  <address>Abbottabad, Kpk, Pakistan</address>
+                </div>
+              </li>
+            </ul>
+            <ul class="social-list" style="margin-top: 1em">
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </section>
+
           <section class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.0000000000005!2d72.29000000000001!3d34.100000000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e9f00000000001%3A0x1234567890abcdef!2sAbbottabad%2C%20Kpk%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
@@ -853,7 +918,17 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form
+              action="https://formspree.io/f/xovlpjne"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <input
+                type="hidden"
+                name="_replyto"
+                value="syedmehrajkazmi11@gmail.com"
+              />
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -863,7 +938,6 @@
                   required
                   data-form-input
                 />
-
                 <input
                   type="email"
                   name="email"
@@ -873,7 +947,6 @@
                   data-form-input
                 />
               </div>
-
               <textarea
                 name="message"
                 class="form-input"
@@ -881,12 +954,17 @@
                 required
                 data-form-input
               ></textarea>
-
               <button class="form-btn" type="submit" data-form-btn>
                 <ion-icon name="paper-plane-outline"></ion-icon>
                 <span>Send Message</span>
               </button>
             </form>
+            <div
+              id="form-success-message"
+              style="display: none; color: green; margin-top: 1em"
+            >
+              Thank you! Your message has been sent.
+            </div>
           </section>
         </article>
       </div>
